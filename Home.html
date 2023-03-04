@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+	<title>Star Movies HD</title>
+	<meta charset="utf-8"/>
+	<script src="jquery.js"></script>
+	<script> 
+	
+	$(function(){
+	  $("#select").click(function(){
+		$("#cat").animate({
+		  height: 'toggle'
+		  
+		});
+	  });
+	});
+	
+	$(function(){
+	$("li").click('click',function(e){
+	alert("You Chose "+e.target.textContent);
+	});
+	});
+	
+		
+	</script> 
+<style>
+body
+{
+	background-color:#0f1622;
+	font-family:Lato;
+	margin:0px;
+	padding:0px;
+}
+.img1
+{
+	max-width: 10%;
+	height: auto;
+	margin-left:20px;
+}
+.header
+{
+	display:flex;
+	justify-content:space-between;
+	background-color:#1C2334;
+	padding-top:1%;
+	padding-bottom:0;
+	box-shadow:7px 0px 15px black;
+
+}
+.input
+{
+	margin-top:10px;
+}
+a
+{
+	margin:20px;
+	color:white;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#C26E13;
+}
+#select
+{
+  max-width:70%;
+  border:none;
+  border-radius:25px;
+  padding:8px 20px 8px 20px;
+  background-color:#00999F;
+  margin: 0px 70px 10px 0px;
+  color:#dedede;
+}
+#select:hover
+{
+	cursor:pointer;
+	background-color:#dedede;
+	color:#0f1622;
+}
+.all
+{
+	display: flex;
+	margin:auto;
+	margin-top:70px;
+	background-image: url("spiderman2.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	width: 1000px;
+	height: 500px;
+	border-radius: 10px;
+}
+.one
+{
+	display: flex;
+	margin-top: 200px;
+}
+.image
+{
+	width: auto;
+	height: 240px;
+	margin-top: 15%;
+}
+.image:hover
+{
+	transform: scale(1.05);
+	box-shadow:3px 3px 15px black;
+}
+.scream
+{
+	max-height:150px;
+	border-radius:7px;
+}
+.scream:hover
+{
+	transform: scale(1.05);
+	box-shadow:3px 3px 15px black;
+}
+.name
+{
+	position:absolute;
+	color: #DEDEDE;
+	margin: 255px 0px 0px -20px;
+	
+}
+#mo1
+{
+	position:relative;
+	border-radius:0 15px 0 0;
+}
+#mo2
+{
+	position:relative;
+}
+#mo3
+{
+	position:relative;
+	border-radius:0 0 15px 0;
+}
+.mo
+{
+	background-color:#1C2334;
+	max-width:300px;
+	padding:6.7px 120px;
+	display:flex;
+	margin-left:400px;
+}
+
+p
+{
+	color: #DEDEDE;
+}
+
+.par
+{
+	margin:4%;
+	width:auto;
+	color:#DEDEDE;
+	padding:7px;
+}
+.title
+{
+	margin-left:100px;
+	margin-top:60px;
+	font-size:18px;
+}
+.title:hover
+{
+	transform: scale(1.05);
+	color:#C26E13;
+	cursor:pointer;
+}
+#cat
+{
+	position:absolute;
+	background-color:#00999F;
+	border-radius:0px 15px;
+	height:auto;
+	width: fit-content;
+	padding-right:17px;
+	margin-left:90%;
+}
+li
+{
+	color:#0f1622;
+}
+li:hover
+{
+	transform: scale(1.05);
+	cursor:pointer;
+	color:#dedede;
+}
+</style>
+
+</head>
+<body>
+<div class="header">
+<div><a href="https://starmovieshd.coffeecup.com/SearchMovies.html"><img class="img1" src="logo.png" title="Star Movies HD"/></a></div>
+<div class="input">
+<a href="https://starmovieshd.coffeecup.com/Home.html">Home</a>
+</div>
+<div class="input">
+<a href="https://starmovieshd.coffeecup.com/Movies.html">Movies</a>
+</div>
+<button id="select"/>Categories</button>
+</div>
+<div id="cat">
+<ol id="list">
+	<li>Action</li>
+	<li>Adventure</li>
+	<li>Animation</li>
+	<li>Comedy</li>
+	<li>Romance</li>
+</ol>
+</div>
+
+<div class="all">
+	<div class="one">
+		<div class="img1">
+			<img src="spiderman.jpg" class="image"/>
+		</div>
+		<div>
+			<a href="https://starmovieshd.coffeecup.com/SpidermanNoWayHome.html" class="name">Spiderman: No Way Home</a>
+		</div>
+	</div>
+	<div class="two">
+		<div class="mo" id="mo1">
+			<div><img src="scream.jpg" class="scream"/></div>
+			<div>	<p class="title">Scream</p></div>
+		</div>
+		<div class="mo" id="mo2">
+			<div><img src="notime.jpg" class="scream"/></div>
+			<div>	<p class="title">No Time to Die</p> </div>
+		</div>
+		<div class="mo" id="mo3">
+			<div><img src="injustice.jpg" class="scream"/></div>
+			<div>	<p class="title">Injustice</p> </div>
+		</div>
+	</div>
+</div>
+<p class="par">StarMovies.com should be your #1 choice to watch movies and tv shows free. We have all of the latest and the greatest movies and TV shows available to watch for anyone to watch at any time. We have a massive library with thousands of movies and TV shows available at your fingertips, so you will always find something to watch no matter what mood you’re in. Action, comedy, drama, horror, romance, suspense; We have every genre you can think of and more. We even have a large number of non-US TV shows, and movies and most are available with subtitles. But the best thing about StarMovies.com is that our streaming services are completely free. You’ll never be charged for watching anything on our website. No matter how many TV shows or movies you watch, you will never have to sign up for a subscription or pay a monthly fee. And you never have to sign up for any type of membership in order to watch any of our listings. Just type in StarMovies.com into your browser and find a movie that’s perfect for you. Click play on the title you want to watch, sit back, and enjoy</p>
+
+<script>
+
+
+</script>
+</body>
+</html>

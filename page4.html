@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  	<title>Star Movies HD</title>
+    <style>
+      body
+      {
+        background-color:#0f1622;
+        font-family:Lato;
+        margin:0px;
+        padding:0px;
+        color:#DEDEDE;
+      }
+      .img1
+      {
+        max-width: 10%;
+        height: auto;
+        margin-left:20px;
+      }
+      .header
+      {
+        display:flex;
+        justify-content:space-between;
+        background-color:#1C2334;
+        padding-top:1%;
+        padding-bottom:0;
+        box-shadow:7px 0px 15px black;
+
+      }
+      #search
+      {
+        padding: 10px 20px 10px 20px;
+        margin-right: 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: #DEDEDE;
+        opacity: 70%;
+      }
+      #search:hover
+      {
+        background-color: white;
+        opacity: 100%;
+      }
+      .input
+      {
+        margin-top:10px;
+      }
+      a
+      {
+        margin:20px;
+        color:#DEDEDE;
+        text-decoration:none;
+      }
+      a:hover
+      {
+        color:#C26E13;
+      }
+      .pop
+      {
+        margin: 80px 0px 0px 100px;
+        border-left:4px solid yellow;
+		    padding-left:5px;
+      }
+
+      .cont
+      {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+      }
+      .cont1
+      {
+        display:flex;
+        flex-wrap:wrap;
+		width:1080px;
+		margin-left:60px;
+      }
+      .cont2
+      {
+        background-color: #1C2334;
+        border-radius: 15px;
+        margin-top: 20px;
+		height:fit-content;
+      }
+	  li
+	  {
+		padding:10px;
+	  }
+    .mo
+    {
+      background-color: #1C2334;
+      margin: 20px 10px;
+      height: 270px;
+      width: 210px;
+      border-radius: 15px;
+
+    }
+    .img
+    {
+      background-color: #dedede;
+      height: 145px;
+      width: auto;
+      border-radius: 15px 15px 0px 0px;
+    }
+    .title
+    {
+      margin-left: 15px;
+      margin-right: 10px;
+    }
+    .but
+    {
+      display: block;
+      background-color: #00999F;
+      color: #DEDEDE;
+      padding: 7px 15px;
+      text-align: center;
+      margin-top: 5px;
+      border-radius: 15px;
+    }
+    .but:hover
+    {
+      background-color: #dedede;
+      color: #0F1622;
+    }
+    .mo:hover
+    {
+      transform: scale(1.05);
+	  box-shadow:3px 3px 15px black;
+    }
+    .spider
+    {
+      background-image:url(spiderman2.jpg);
+      background-size: cover;
+    }
+    .inj
+    {
+      background-image:url(Inj.jfif);
+      background-size: cover;
+    }
+    .notime
+    {
+      background-image:url(notime.jfif);
+      background-size: cover;
+    }
+    .scream
+    {
+      background-image:url(scream.jfif);
+      background-size: cover;
+    }
+	.mo2
+    {
+      background-color: #1C2334;
+	  margin: 10px 10px;
+      height: 270px;
+      width: 210px;
+      border-radius: 15px;
+
+    }
+	#lef
+	{
+		margin-left:10px;
+	}
+	.mo2:hover
+    {
+      transform: scale(1.05);
+	  box-shadow:3px 3px 15px black;
+    }
+	.movie
+	{
+		background-color:#dedede;
+		height:140px;
+		width:auto;
+		border-radius:15px 15px 0 0;
+	}
+	
+    </style>
+	
+  </head>
+  <body>
+    <div class="header">
+    <div><a href="page2.html"><img class="img1" src="logo.png" title="Star Movies HD"/></a></div>
+    <div class="input">
+    <a href="page3.html">Home</a>
+    </div>
+    <div class="input">
+    <a href="page4.html">Movies</a>
+    </div>
+    <div>
+      <input type="text" placeholder="Search" id="search"/>
+    </div>
+    </div>
+<div class="pop">
+  <h3 id="pop"></h3>
+</div>
+    <div class="cont">
+      <div class="cont1">
+        <div id="mo1" class="mo">
+          <div class="img spider">
+          </div>
+          <p class="title">Spiderman: No Way Home</p>
+          <a href="page5.html" class="but" onclick="page5.html">Watch</a>
+        </div>
+        <div id="mo2" class="mo">
+          <div class="img notime">
+
+          </div>
+          <p class="title">No Time To Die</p>
+          <a href="" class="but">Watch</a>
+        </div>
+        <div id="mo3" class="mo">
+          <div class="img scream">
+
+          </div>
+          <p class="title">Scream</p>
+          <a href="" class="but">Watch</a>
+        </div>
+        <div id="mo4" class="mo">
+          <div class="img inj">
+
+          </div>
+          <p class="title">Injustice</p>
+          <a href="" class="but">Watch</a>
+        </div>
+		</br>
+		<div id="lef" class="mo2">
+          <div class="movie">
+          </div>
+          <p class="title">The Batmam</p>
+          <a href="page5.html" class="but">Watch</a>
+        </div>
+        <div class="mo2">
+          <div class="movie">
+
+          </div>
+          <p class="title">Eternals</p>
+          <a href="" class="but">Watch</a>
+        </div>
+        <div class="mo2">
+          <div class="movie">
+
+          </div>
+          <p class="title">Dune</p>
+          <a href="" class="but">Watch</a>
+        </div>
+        <div class="mo2">
+          <div class="movie">
+
+          </div>
+          <p class="title">Venom</p>
+          <a href="" class="but">Watch</a>
+		</div>
+      </div>
+      <div class="cont2">
+        <ol id="list">
+          <label for="list">Recommended Movies:</label>
+          <li>The Batman</li>
+          <li>Spiderman: No Way Home</li>
+          <li>Venom: Let There Be Carnage</li>
+          <li>No Time To Die</li>
+          <li>Eternals</li>
+          <li>Doctor Strange in the Multiverse of Madness</li>
+          <li>Morbius</li>
+          <li>Dune</li>
+        </ol>
+        <a id="add" class="but">Add</a>
+      </div>
+	  
+	</div>
+	  <script>
+		document.getElementById("add").addEventListener("click",function (){
+			const movie = prompt("what Movie You want to add?");
+			var new_movie = document.createElement("li");
+			var n = movie.slice(1);
+			var y = movie.charAt(0).toUpperCase();
+			var all = y + n;
+			new_movie.textContent = all;
+			var len = all.length;
+			if(len < 2){alert("Error, Try again");}
+			else
+				{
+					document.getElementById("list").appendChild(new_movie);
+				}
+			
+		});
+			
+			
+			let i = 0;
+			var pop = document.getElementById("pop");
+			var string = "Popular Movies";
+				window.addEventListener("load", function type() {
+				
+				pop.textContent += string.charAt(i);
+				i++;
+				setTimeout(type,120);
+		});
+		
+		
+		document.getElementById("search").addEventListener("click", function () {
+			document.addEventListener("keypress",function(e){
+				if(e.charCode === 13){
+					var search = document.getElementById('search').value;
+					var len = search.length;
+					for(var i=0;i <= len;i++){
+						var sea = search.split(' ');
+						if (sea[i]==="spiderman")
+						{
+							window.location = "page5.html";
+							break;
+						}
+						else
+						{
+							alert("The Movie is not Available");
+							break;
+						}
+					}
+							
+				}
+			})
+		});
+	</script>
+	
+  </body>
+</html>

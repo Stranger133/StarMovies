@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+	<title>Star Movies HD</title>
+	<meta charset="utf-8"/>
+	<style>
+body
+{
+	background-color:#0f1622;
+	font-family:Lato;
+	margin:0px;
+	padding:0px;
+}
+.img1
+{
+	max-width: 10%;
+	height: auto;
+	margin-left:20px;
+}
+.header
+{
+	display:flex;
+	justify-content:space-between;
+	background-color:#1C2334;
+	padding-top:1%;
+	padding-bottom:0;
+	box-shadow:7px 0px 15px black;
+
+}
+.input
+{
+	margin-top:10px;
+}
+a
+{
+	margin:20px;
+	color:white;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#C26E13;
+}
+
+.img2
+{
+	max-width: 50%;  
+	height: auto;
+	margin-left:25%;
+	margin-top:7%;
+}
+.searchlogo
+{
+	max-width: 1.5%;  
+	height: auto;
+}
+
+#input
+{
+	width: 43%;
+	height: auto;
+	margin-left:25%;
+	padding:20px;
+	background-color:#dedede;
+	border:none;
+	border-top-left-radius:30px;
+	box-shadow:7px 0px 15px black;
+	
+}
+button
+{
+	max-width: 4%;
+	height: auto;
+	background-color:yellow;
+	padding:20px;
+	border:none;
+	border-bottom-right-radius:30px;
+}
+button:hover
+{
+	cursor:pointer;
+}
+p
+{
+	margin:4%;
+	width:auto;
+	color:#DEDEDE;
+	padding:7px;
+}
+#mode
+{
+	margin-left:45%;
+	
+}
+#label
+{
+	color:#dedede;
+}
+span:hover
+{
+	cursor:pointer;
+}
+</style>
+<script src="page2.js" defer></script>
+</head>
+<body id="body">
+
+<div class="header" id="header">
+<div><a href=""><img class="img1" src="logo.png" title="Star Movies HD"/></a></div>
+
+<div class="input">
+<a href="page3.html" id="a1">Home</a>
+</div>
+<div class="input">
+<a href="page4.html" id="a2">Movies</a>
+</div>
+
+</div>
+
+<img class="img2" src="logo.png" title="Star Movies HD"/>
+<div class="search"><input placeholder="search" id="input"/><button title="search" id="but" ><img class="searchlogo" src="search.jpg" title="search"></button></div>
+<p id="text" >Hello <strong><span id="span" onclick="myFunction()" class="text">there</span></strong>; StarMovies boasts a huge collection of Movies with thousands of titles. No matter what genre you are up for today, be it Action, Animation, Comedy, Documentary, History, Horror, Thriller, Sci-fi, TV shows, or Game-Show, you can definitely find something interesting to watch on the site. Apart from an extensive content library, we also provide free users with premium quality features that are normally exclusive to paid users on other sites. Put aside all of your worries to immerse yourself in the cinematic world with StarMovies.</P>
+
+<input type="checkbox" name="mode" id="mode"><label for="mode" id="label">Light Mode</label></input>
+</body>
+</html>
