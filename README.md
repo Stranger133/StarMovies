@@ -1,2 +1,0 @@
-# StarMovies
-Movie hosting website
