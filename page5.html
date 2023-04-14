@@ -1,177 +1,198 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-  	<title>Star Movies HD</title>
-    <style>
-	body
-      {
-        background-color:#0F1622;
-        font-family:Lato;
-        margin:0px;
-        padding:0px;
-        color:#DEDEDE;
-      }
-      .img1
-      {
-        max-width: 10%;
-        height: auto;
-        margin-left:20px;
-      }
-      .header
-      {
-        display:flex;
-        justify-content:space-between;
-        background-color:#1C2334;
-        padding-top:1%;
-        padding-bottom:0;
-        box-shadow:7px 0px 15px black;
-
-      }
-      .search
-      {
-        padding: 10px 20px 10px 20px;
-        margin-right: 15px;
-        border: none;
-        border-radius: 20px;
-        background-color: #DEDEDE;
-        opacity: 70%;
-      }
-      .search:hover
-      {
-        background-color: white;
-        opacity: 100%;
-      }
-      .input
-      {
-        margin-top:10px;
-      }
-      a
-      {
-        margin:20px;
-        color:#DEDEDE;
-        text-decoration:none;
-      }
-      a:hover
-      {
-        color:#C26E13;
-      }
-	  .bg
-	  {
-		background-image:url(spiderman3.jpg);
+    <header>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+        <title>Star Movies HD</title>
+        <style>
+            body{
+                background-color:#0F1622;
+                font-family:Lato;
+                margin:0px;
+                padding:0px;
+                height: 100%;
+                color:#DEDEDE;
+            }
+            p{
+                white-space: normal;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color:#1C2334;
+                padding: 5px;
+                box-shadow:7px 0px 15px black;
+            }
+            .img1{
+                max-width: 100px;
+                margin-left: 5px;
+            }
+            .input{
+              margin-top:10px;
+            }
+            a {
+                font-size: 16px;
+                margin-right: 20px;
+                color:#DEDEDE;
+                text-decoration: none;
+              }
+            a:hover {
+              color:#C26E13;
+            }
+            .super-container{
+                display: flex;
+                flex-direction: column;
+            }
+            .spec{
+                background-image:url(spiderman3.jpg);
 		background-repeat:no-repeat;
 		background-position: center;
 		background-size: cover;
 		height:700px;
 		width:auto;
 		filter: blur(8px);
-		margin-top:8px;
-
-	  }
-	  .cont
-	  {
-		display:flex;
-		justify-content:center;
-        flex-wrap:wrap;
-		position:absolute;
-		top:25%;
-		left:15%;
-	  }
-	  .spid
-	  {
-		height:355px;
-		width:240px;
-		box-shadow:2px 2px 20px black;
-	  }
-	  .cont2
-	  {
-		background-color:#1C2334;
-		height:700px;
-		width:auto;
-	  }
-	  iframe
-	  {
-		height:480px;
-		width:720px;
-		border:none;
-		margin-top:115px;
-		margin-left:25%;
-		
-	  }
-	  .cont3
-	  {
-		background-color:#0F1622;
-		height:150px;
-		width:auto;
-		text-align:center;
-	  }
-	  .disclaim
-	  {
-		margin-top:50px;
-	  }
-	  .title
-	  {
-		margin-left:40px;
-	  }
-	  .hd
-	  {
-		border:2px solid #DEDEDE;
-		border-radius:5px;
-		padding:3px;
-		width:24px;
-	  }
-	  .but
-	  {
-		border:none;
-		background-color:#dedede;
-		color:#0F1622;
-		padding:17px 24px;
-		text-align:center;
-		margin-top:20px;
-		border-radius:30px;
-		margin-right:15px;
-	  }
-	  .but:hover
-    {
-      background-color: #00999F;
-      color: #dedede;
-    }
-	.parag
-	{
-		width:700px;
-	}
-	
-	video{
-	height:720px;
-	width:1080px;
-	margin-left:15%;
-	margin-top:25px;
-	}
-	</style>
-	<script>
-	function myfunc(){
-	content = document.getElementById('screen');
-	content.innerHTML = '<iframe id="vid" width="1920" height="720" frameborder="0" src="https://mega.nz/embed/3Og33Tpb#DS0ZDTwJLFSrt82q178Cmn6iQssRJXomkAsTXALYJBw" allowfullscreen ></iframe>';
-	}
-	</script>
-  </head>
-  <body>
-	<div class="header">
-    <div><a href="page2.html"><img class="img1" src="logo.png" title="Star Movies HD"/></a></div>
-    <div class="input">
-    <a href="page3.html">Home</a>
-    </div>
-    <div class="input">
-    <a href="page4.html">Movies</a>
-    </div>
-    <div>
-      
-    </div>
-    </div>
-	<div class="cont1"><div class="bg"></div><div class="cont"><div class="img"><img src="spiderman.jpg" class="spid"/></div><div class="title"><h1>Spiderman: No Way home</h1><div class="hd">HD</div><button class="but" onclick="myfunc()">Watch</button><h5>Overview:</h5><p class="parag">Synopsis One week after Quentin Beck's attacks in Europe and subsequent framing of Spider-Man for his murder, Spider-Man's civilian identity as Peter Parker is revealed to the world.</p><h5>Duration: 148min</h5><h5>Released: 2021-12-15</h5></div></div></div></div>
-	<div id="screen"></div>
-	<div class="cont2"><iframe src="https://www.youtube.com/embed/JfVOs4VSpmA"></iframe></div>
-	<div class="cont3"><div class="disclaim"><a href="https://www.termsfeed.com/live/8c088c6d-379c-43e0-9024-e01b70e2cc8c">Terms of Service	</a>	<a href="contactus.html">Contact us</a><p>StarMovies.com is a Free Movies streaming site with zero ads. We let you watch movies online without having to register or paying, with over 10000 movies and TV-Series.</p><em>@StarMovies.com</em></div></div>
-  </body>
+            }
+            .trailer{
+                background-color: #1C2334;
+                height: 700px;
+                width: auto;
+            }
+            .ytb{
+                height:85%;
+                width:70%;
+                border:none;
+                margin-top:3.5%;
+                margin-left:15%;
+            }
+            .terms{
+                padding: 4%;
+                text-align: center;
+            }
+            .contact-us{
+                display: flex;
+                justify-content: center;
+            }
+            .actual-spec{
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                width: auto;
+                margin-top: 10%;
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+                .spid
+                {
+                    height:355px;
+                    width:240px;
+                    box-shadow:2px 2px 20px black;
+                }
+                .description{
+                    margin-left: 2%;
+                }
+                .hd
+                {
+                    border:2px solid #DEDEDE;
+                    border-radius:5px;
+                    padding:3px;
+                    width:24px;
+                }
+                .but
+                {
+                    border:none;
+                    background-color:#dedede;
+                    color:#0F1622;
+                    padding:17px 24px;
+                    text-align:center;
+                    margin-top:20px;
+                    border-radius:30px;
+                    margin-right:15px;
+                }
+                .but:hover
+                {
+                  background-color: #00999F;
+                  color: #dedede;
+                }
+                
+        </style>
+        <script>
+            function myfunc(){
+            content = document.getElementById('screen');
+            content.innerHTML = '<iframe class="vid" style="margin: 3% 0 3% 10.5%;" width="80%" height="720" frameborder="0" src="https://mega.nz/embed/3Og33Tpb#DS0ZDTwJLFSrt82q178Cmn6iQssRJXomkAsTXALYJBw" allowfullscreen ></iframe>';
+            }
+        </script>
+    </header>
+    <body>
+        <div class="header">
+            <div>
+                <a href="page2.html">
+                    <img class="img1" src="logo.png" title="Star Movies HD"/>
+                </a>
+            </div>
+            <div class="input">
+                <a href="page3.html">
+                    Home
+                </a>
+                <a href="page4.html">
+                    Movies
+                </a>
+            </div>
+        </div>
+        <div class="super-container">
+            <div class="spec">
+            </div>
+            <div class="actual-spec">
+                <div class="movie-image" >
+                    <img src="spiderman.jpg" class="spid"/>
+                </div>
+                <div class="description">
+                    <h1>Spiderman: No Way home</h1>
+                    <div class="hd">
+                        HD
+                    </div>
+                    <button class="but" onclick="myfunc()">
+                        Watch
+                    </button>
+                    <h5>
+                        Overview:
+                    </h5>
+                    <p class="parag">
+                        Synopsis One week after Quentin Beck's attacks in Europe and subsequent framing of Spider-Man for his murder, Spider-Man's civilian identity as Peter Parker is revealed to the world.
+                    </p>
+                    <h5>
+                        Duration: 148min
+                    </h5>
+                    <h5>
+                        Released: 2021-12-15
+                    </h5>
+                </div>
+            </div>
+            <div id='screen'>
+                
+            </div>
+            <div class="trailer">
+                <iframe class="ytb" src="https://www.youtube.com/embed/JfVOs4VSpmA">
+                </iframe>
+            </div>
+            <div class="terms">
+                <div class="contact-us">
+                    <div>
+                        <a href="https://www.termsfeed.com/live/8c088c6d-379c-43e0-9024-e01b70e2cc8c">
+                            Terms of Service	
+                        </a>
+                    </div>
+                    <div>
+                        <a href="contactus.html">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+                <p>
+                    StarMovies.com is a Free Movies streaming site with zero ads. We let you watch movies online without having to register or paying, with over 10000 movies and TV-Series.
+                </p>
+                <em>
+                    @StarMovies.com
+                </em>
+            </div>
+        </div>
+    </body>
 </html>
