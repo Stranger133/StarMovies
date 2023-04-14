@@ -12,7 +12,9 @@ To use StarMovies, simply clone the repository to your local machine using the f
 
 To view the website, open this [Link](https://stranger133.github.io/StarMovies/) in your web browser.
 
-**Note:** If you want to use the search functionality, the only available movie is "spideman".
+**Note:** 
+    If you want to use the search functionality, the only available movie is "spideman".
+    Write any correct email to login.
 
 ## Credits
 
