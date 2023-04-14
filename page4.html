@@ -13,22 +13,21 @@
         padding:0px;
         color:#DEDEDE;
       }
-      .img1
-      {
-        max-width: 10%;
-        height: auto;
-        margin-left:20px;
-      }
-      .header
-      {
-        display:flex;
-        justify-content:space-between;
-        background-color:#1C2334;
-        padding-top:1%;
-        padding-bottom:0;
-        box-shadow:7px 0px 15px black;
-
-      }
+      .header{
+		display: flex;
+		justify-content: space-between;
+		background-color:#1C2334;
+		padding: 5px;
+		box-shadow:7px 0px 15px black;
+		}
+		.img1{
+		max-width: 100px;
+		margin-left: 5px;
+		}
+		.head{
+			display: flex;
+			justify-content: center;
+		}
       #search
       {
         padding: 10px 20px 10px 20px;
@@ -49,7 +48,7 @@
       }
       a
       {
-        margin:20px;
+		margin-right: 7px;
         color:#DEDEDE;
         text-decoration:none;
       }
@@ -181,15 +180,17 @@
   <body>
     <div class="header">
     <div><a href="page2.html"><img class="img1" src="logo.png" title="Star Movies HD"/></a></div>
-    <div class="input">
-    <a href="page3.html">Home</a>
-    </div>
-    <div class="input">
-    <a href="page4.html">Movies</a>
-    </div>
-    <div>
-      <input type="text" placeholder="Search" id="search"/>
-    </div>
+	<div class="head">
+		<div class="input">
+		<a href="page3.html">Home</a>
+		</div>
+		<div class="input">
+		<a href="page4.html">Movies</a>
+		</div>
+		<div>
+		  <input type="text" placeholder="Search" id="search"/>
+		</div>
+	</div>
     </div>
 <div class="pop">
   <h3 id="pop"></h3>
