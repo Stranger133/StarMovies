@@ -14,7 +14,7 @@ To view the website, open this [Link](https://stranger133.github.io/StarMovies/)
 
 **Note:** 
     If you want to use the search functionality, the only available movie is "spideman".
-    Write any correct email to login.
+**Write any correct email to login.**
 
 ## Credits
 
